@@ -1,0 +1,36 @@
+---
+title: "Title"
+author: "Jen-Hsiang Ou"
+date: "2022-03-18"
+output:
+  bookdown::pdf_document2:
+    number_sections: false
+    citation_package: natbib
+  bookdown::word_document2:
+      number_sections: false
+documentclass: article
+geometry: [a4paper, margin=1in]
+fontsize: 12pt
+fontfamily: newpxtext
+toc: false
+linestretch: 1.25
+bibliography: references.bib
+biblio-style: apalike
+knit: (function(inputFile, encoding){rmarkdown::render(inputFile, encoding = encoding, output_format = "all") })
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Title for the first section {#section-id}
+
+Add some words and citations [@ou2019] or use year only citation as [-@ou2019]
+
+The figure can be cited as well (Figure \@ref(fig:tmpplot))
+
+```{r tmpplot, fig.cap="This is the temporary figure", echo=FALSE}
+knitr::include_graphics("./tmpplot.jpeg")
+```
+
+# Reference
