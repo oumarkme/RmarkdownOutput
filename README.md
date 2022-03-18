@@ -1,2 +1,8 @@
 # RmarkdownOutput
-Rmarkdown template which will simultaneously generate a word document and a latex-pdf document
+
+This is a private used Rmarkdown template which will generate a word document and a latex-pdf document simutaniously. Citation, cross-referencing are checked working smoothly generating both word and pdf documents. R, LaTeX, and Pandoc need to be pre-installed. This template is personalized [bookdown](https://bookdown.org/yihui/bookdown/), for more information please check [Yihui Xie's](https://github.com/rstudio/bookdown) work.
+
+This template included:
+- Rmarkdown document with yaml setting: index.Rmd
+- Reference document: references.bib
+- Example plot: templot.jpeg
